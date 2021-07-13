@@ -1,0 +1,86 @@
+ div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+
+body2 {
+	background: #fff;
+	font-family: Helvetica, sans-serif; font-size: 18px; line-height: 24px;
+}
+html {
+    min-height: 100%; /* Ini diperlukan untuk memastikan bahwa gradien merentang ke seluruh isi halaman*/
+}
+
+body{
+	font-family: Helvetica, sans-serif; font-size: 18px; line-height: 24px;
+    background: -webkit-linear-gradient(#53bd84, #C9DCB9); /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(#53bd84, #C9DCB9); /* Opera 11.1+ */
+    background: -moz-linear-gradient(#53bd84, #C9DCB9); /* Firefox 3.6+ */
+    background: linear-gradient(#53bd84, #C9DCB9); /* Sintaksis standar (harus berada di urutan terakhir) */
+    background-color: #53bd84; /*Akan lebih baik jika Anda menentukan warna latar belakang untuk berjaga-jaga andai saja latar belakang gradien gagal dimuat */
+}
+
+nav {
+	margin: 0px auto; 
+	text-align: left;
+}
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+
+nav ul {
+	background: #53bd84; 
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+	nav ul li {
+		float: left;
+	}
+		nav ul li:hover {
+			background: #666;
+		}
+			nav ul li:hover a {
+				color: #fff;
+			}
+		
+		nav ul li a {
+			display: block; padding: 25px 40px;
+			color: #fff; text-decoration: none;
+		}
+			
+		
+	nav ul ul {
+		background: #53bd84; border-radius: 0px; padding: 0;
+		position: absolute; top: 100%;
+	}
+		nav ul ul li {
+			float: none; 
+			border-top: 1px solid #53bd84;
+			border-bottom: 1px solid #53bd84; position: relative;
+		}
+			nav ul ul li a {
+				padding: 15px 40px;
+				color: #fff;
+			}	
+				nav ul ul li a:hover {
+					background: #666;
+				}
+		
+	nav ul ul ul {
+		position: fixed; left: 100%; top:0;
+	}
+		
